@@ -1,0 +1,33 @@
+extends ../layout/index
+block slider 
+    .slider
+        h1 Rio de Janeiro 
+        em aventura
+
+block contenido
+    main.container.mt-5
+        h2.text-center.mb-5 Sobre Nosotros
+        .row.mb-5
+            .col-md-6
+                p Aliquam at neque non massa posuere vehicula. Integer malesuada lacus enim, vitae rutrum tellus iaculis eget. Donec id gravida sapien, vitae congue ex. Sed tincidunt libero vel lacus commodo, vitae viverra mi hendrerit. Aenean rutrum orci sit amet feugiat tempus. Cras vestibulum, lectus a molestie ultrices, metus elit mollis tellus, rutrum commodo magna velit a urna. Praesent vitae nibh at neque posuere aliquet. Aliquam tincidunt semper fermentum. Aenean id neque tortor. Etiam viverra malesuada lectus, et mollis orci faucibus ut. Proin at cursus diam. Aliquam ut eros id nunc porttitor gravida. Integer congue dapibus scelerisque. 
+
+                p Mauris urna velit, suscipit eget odio et, porta posuere lorem. Proin fringilla orci ac commodo porta. Fusce sagittis tortor in sem dignissim laoreet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec fermentum mollis urna, id elementum diam cursus ac. Phasellus pellentesque iaculis erat, sit amet euismod magna iaculis eu.
+            .col-md-6    
+                img(src="/img/inicio_nosotros.jpg" class="img-fluid")
+        
+        h2.text-center.mb-5 Próximos Viajes 
+        include ../layout/partials/viajes        
+
+    .descuento
+        .container 
+            .row
+                .col-md-6
+                    .contenido
+                        h3 5% de Descuento 
+                        p.titulo Viaje a Canada
+                        p.fecha 20 de Marzo 2020 - 28 de Marzo de 2020
+                        p.precio $2,500 USD
+
+    .container
+        h2.text-center.my-5 Testimoniales 
+        include ../layout/partials/testimoniales  
